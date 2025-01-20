@@ -11779,6 +11779,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-uuid@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "react-native-uuid@npm:2.0.3"
+  checksum: e47774481feaed5d38f75fb4b03f5189c03e7452038f1b0fa56677add8a8bdef64ec7ad5e83f9fa761d8788cac5c8e554ade07e82a2818145337df7c883e2124
+  languageName: node
+  linkType: hard
+
 "react-native-web@npm:~0.19.13":
   version: 0.19.13
   resolution: "react-native-web@npm:0.19.13"
@@ -14162,6 +14169,7 @@ __metadata:
     react: 18.3.1
     react-native: 0.76.6
     react-native-builder-bob: ^0.35.2
+    react-native-uuid: ^2.0.3
     release-it: ^17.10.0
     typescript: ^5.2.2
   peerDependencies:
