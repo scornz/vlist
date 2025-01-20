@@ -1,20 +1,20 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'vlist';
-
-const result = multiply(3, 7);
+import { Text } from 'react-native';
+import { VList, VListItem } from 'vlist';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <VList style={{ flex: 1 }}>
+      <VListItem itemKey="item-1" size={100}>
+        <Text>Item #1 (height = 100)</Text>
+      </VListItem>
+
+      <VListItem itemKey="item-2" size={() => 75}>
+        <Text>Item #2 (height = 75)</Text>
+      </VListItem>
+
+      <VListItem itemKey="item-3">
+        <Text>Item #3 (height = 50 by default)</Text>
+      </VListItem>
+    </VList>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
